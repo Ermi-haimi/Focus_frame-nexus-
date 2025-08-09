@@ -25,14 +25,15 @@
         <section class="form-section">
             <form>
                 <div class="name">
-                    <label for="firstName">First Name:</label>
-                    <input type="text" name="firstName" id="firstName" placeholder="Abebe" required>
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" name="lastName" id="lastName" placeholder="Kebede" required>
+                    <div><label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Type here..." required></div>
+                    <div><label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Type here..." required></div>
+
                 </div>
                 <div class="phone">
                     <label for="phoneNumber">Phone:</label>
-                    <input type="tel" name="phoneNumber" id="phoneNumber" required>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Type here..." required>
                 </div>
                 <div class="event">
                     <label>
@@ -45,13 +46,13 @@
                             <option value="other">Other</option>
                         </select>
                     </label>
+                    <div><label for="date">Date:</label>
+                        <input type="date" name="date" id="date"></div>
 
-                    <label for="date">Date:</label>
-                    <input type="date" name="date" id="date">
                 </div>
                 <div class="package">
                     <label>
-                        Event:
+                        Package:
                         <select>
                             <option value="halfDay">Half-Day</option>
                             <option value="fullDay">Full-Day</option>

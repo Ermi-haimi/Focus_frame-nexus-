@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* reset begin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* reset end */
+
+:root {
+    --header-background-color: #bb9557a9;
+    --light-brown: #BB9457;
+    --text-color: #432818;
+    --price-color: #008416;
+    --button-color: #99582A;
+}
+
+body {
+    color: var(--text-color);
+    font-family: "Inria Serif", serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+header nav {
+    background-color: var(--header-background-color);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header h1 {
+    font-size: 7rem;
+    padding: 4rem 4rem 4rem 2rem;
+}
+
+
+.form-section {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--light-brown);
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 3em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    gap: 1em
+}
+
+.phone {}
+
+.package {}
+
+input,
+select {
+    background-color: var(--button-color);
+    color: white;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px
+}
+
+input::placeholder {
+    color: rgb(218, 207, 207);
+}
+
+footer {
+    background-color: var(--light-brown);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+.footer-nav a {
+    display: block;
+}
+
+.footer-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
