@@ -122,7 +122,7 @@ header nav {
     gap: 3rem;
 }
 
-.modeling-container {
+.container {
     display: grid;
     position: relative;
     width: 90%;
@@ -130,93 +130,33 @@ header nav {
     grid-template-columns: 200px 1fr 1fr;
 }
 
-.modeling-title {
+.title {
     font-size: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.modeling-title h2 {
+.title h2 {
     transform: rotate(-90deg);
 }
 
-.modeling-images-container {
+.images-container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.modeling-text {
+.text {
     font-size: 2rem;
     padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.wedding-container {
-    display: grid;
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    grid-template-columns: 200px 1fr 1fr;
-}
-
-.wedding-title {
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.wedding-title h2 {
-    transform: rotate(-90deg);
-}
-
-.wedding-images-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.wedding-text {
-    font-size: 2rem;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.business-container {
-    display: grid;
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    grid-template-columns: 200px 1fr 1fr;
-}
-
-.business-title {
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.business-title h2 {
-    transform: rotate(-90deg);
 }
 
 .business-image-container {
     display: flex;
-}
-
-.business-text {
-    font-size: 2rem;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .ready {
@@ -243,4 +183,27 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+
+
+@media (max-width:950px) {
+    .title h2 {
+        transform: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:900px) {
+    .why-us {
+        flex-direction: column;
+    }
+
+    .why-us-image {
+        /* opacity: 0.5; */
+        position: static;
+    }
 }

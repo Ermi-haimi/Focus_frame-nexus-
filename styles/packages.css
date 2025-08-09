@@ -39,9 +39,6 @@ header nav {
     padding: 2rem;
     display: flex;
     justify-content: space-evenly;
-    /* position: fixed;
-    right: 0;
-    left: 0; */
 }
 
 header h1 {
@@ -50,18 +47,23 @@ header h1 {
 }
 
 .packages-container {
-    border: 4px dashed blue;
     display: grid;
     grid-template-columns: repeat(10, minmax(0, 1fr));
     grid-template-rows: 1fr 1fr;
-    gap: 100px;
     width: 100%;
     padding: 2rem;
 }
 
 .package {
-    /* border: 4px dashed green; */
-    padding: 2rem
+    padding: 2rem;
+    border-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    min-width: 400px;
+    max-width: 500px;
 }
 
 .half-day {
@@ -75,13 +77,11 @@ header h1 {
 }
 
 .package-name {
-    /* border: 2px dashed salmon; */
     text-align: center;
     font-size: 2rem;
 }
 
 .the-package {
-    /* border: 2px dashed rgb(44, 237, 40); */
     padding: 1rem
 }
 
@@ -119,37 +119,18 @@ ul {
 
 .full-day {
     grid-column: 6/10;
-    border-color: orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
 }
 
 .editing {
     grid-column: 2/6;
-    border-color: orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
 }
 
 .drone {
     grid-column: 6/10;
-    border-color: orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
 }
 
 .container {
-    /* border: 4px dashed rgb(188, 145, 231); */
-    max-width: 350px;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -176,4 +157,14 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+
+@media (max-width:1000px) {
+    .packages-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }

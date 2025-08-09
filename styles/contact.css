@@ -67,10 +67,6 @@ form {
     gap: 1em
 }
 
-.phone {}
-
-.package {}
-
 input,
 select {
     background-color: var(--button-color);
@@ -102,4 +98,16 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+
+@media (max-width:660px) {
+    .name {
+        flex-direction: column;
+        gap: 1em
+    }
+
+    form {
+        width: fit-content;
+        margin: 0 auto;
+    }
 }
