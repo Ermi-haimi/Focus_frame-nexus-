@@ -33,6 +33,17 @@ header nav {
     justify-content: space-evenly;
 }
 
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav a:hover,
+header nav a:focus {
+    color: var(--text-color);
+}
+
+
 header h1 {
     font-size: 7rem;
     padding: 4rem 4rem 4rem 2rem;
@@ -92,6 +103,13 @@ footer {
 
 .footer-nav a {
     display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+    color: var(--text-color)
 }
 
 .footer-nav {

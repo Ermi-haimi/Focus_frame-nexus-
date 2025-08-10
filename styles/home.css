@@ -23,6 +23,7 @@ img {
 body {
     color: var(--text-color);
     font-family: "Inria Serif", serif;
+    min-width: 100%;
 }
 
 header {
@@ -36,9 +37,20 @@ header nav {
     padding: 2rem;
     display: flex;
     justify-content: space-evenly;
+
     /* position: fixed;
     right: 0;
     left: 0; */
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav a:hover,
+header nav a:focus {
+    color: var(--text-color);
 }
 
 .header-text {
@@ -50,6 +62,7 @@ header nav {
     max-width: fit-content;
     position: absolute;
     right: 5%;
+
 }
 
 .header-text h1 {
@@ -65,19 +78,46 @@ header nav {
 }
 
 .rotate-animation {
-    display: flex;
-    justify-content: space-around;
-    /* gap: 3rem; */
+    font-size: 15px;
+    overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none;
     font-size: 3rem;
-    padding: 1em;
-    flex-wrap: wrap;
+    padding: 1rem;
+    display: flex;
+    --gap: 2rem;
+    gap: var(--gap);
+}
+
+.rotate-animation ul {
+    list-style: none;
+    flex-shrink: 0;
+    /* min-width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+
+    animation: scroll 20s linear infinite;
+}
+
+.rotate-animation:hover ul {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
 }
 
 .why-us {
     background-color: var(--light-brown);
     display: flex;
     position: relative;
-    color: white
+    color: white;
+    /* min-width: 100%; */
+
 }
 
 .why-us-image {
@@ -85,6 +125,7 @@ header nav {
     position: sticky;
     top: 0;
     height: fit-content;
+
 }
 
 .why-us-text {
@@ -113,7 +154,8 @@ header nav {
 
 .recent-work-title {
     font-size: 4rem;
-    padding: 1em
+    padding: 1em;
+
 }
 
 .recent-work-container {
@@ -128,6 +170,7 @@ header nav {
     width: 90%;
     margin: 0 auto;
     grid-template-columns: 200px 1fr 1fr;
+
 }
 
 .title {
@@ -135,6 +178,7 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .title h2 {
@@ -145,6 +189,7 @@ header nav {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
 }
 
 .text {
@@ -153,6 +198,7 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .business-image-container {
@@ -162,7 +208,18 @@ header nav {
 .ready {
     font-size: 2rem;
     padding: 1rem;
-    margin: 1rem
+    margin: 1rem;
+
+}
+
+.ready a {
+    text-decoration: none;
+    color: #BB9457
+}
+
+.ready a:hover {
+    opacity: 0.8;
+
 }
 
 footer {
@@ -172,23 +229,34 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem
+    gap: 2rem;
+
 }
 
 .footer-nav a {
     display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+    color: var(--text-color)
 }
 
 .footer-nav {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap-reverse;
 }
 
 
 @media (max-width:950px) {
     .title h2 {
         transform: none;
+        font-size: 2rem;
     }
 
     .container {
@@ -205,5 +273,12 @@ footer {
     .why-us-image {
         /* opacity: 0.5; */
         position: static;
+    }
+}
+
+@media (max-width:660px) {
+    .header-text h2 {
+        width: 100%;
+        text-shadow: 2px 2px #000;
     }
 }

@@ -41,6 +41,17 @@ header nav {
     justify-content: space-evenly;
 }
 
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav a:hover,
+header nav a:focus {
+    color: var(--text-color);
+}
+
+
 header h1 {
     font-size: 7rem;
     padding: 4.6rem 4rem 4rem 2rem
@@ -79,6 +90,9 @@ header h1 {
 .package-name {
     text-align: center;
     font-size: 2rem;
+    background-color: #BB9457;
+    padding: 0.5em;
+    border-radius: 20px;
 }
 
 .the-package {
@@ -106,9 +120,14 @@ ul {
     background-color: var(--button-color);
     padding: 1em;
     color: white;
-    border-radius: 50px;
+    border-radius: 20px;
     text-align: center;
     font-size: 1.4rem;
+}
+
+.book-now-button:hover,
+.book-now-button:focus {
+    opacity: 0.9;
 }
 
 .book-now-button a {
@@ -135,7 +154,8 @@ ul {
     flex-direction: column;
     gap: 2rem;
     padding: 1rem;
-    box-shadow: 5px 5px 5px var(--light-brown);
+    box-shadow: 0 0 10px 0 #00000092;
+    ;
     border-radius: 20px
 }
 
@@ -151,6 +171,13 @@ footer {
 
 .footer-nav a {
     display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+    color: var(--text-color)
 }
 
 .footer-nav {
