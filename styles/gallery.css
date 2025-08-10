@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* reset begin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* reset end */
+
+:root {
+    --header-background-color: #bb9557a9;
+    --light-brown: #BB9457;
+    --text-color: #432818;
+    --price-color: #008416;
+    --button-color: #99582A;
+}
+
+body {
+    color: var(--text-color);
+    font-family: "Inria Serif", serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+header nav {
+    background-color: var(--header-background-color);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header h1 {
+    font-size: 7rem;
+    padding: 4rem 4rem 4rem 2rem;
+}
+
+.gallery-container {
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    gap: 1em
+}
+
+img {
+    width: 100%;
+}
+
+.image-conainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1em
+}
+
+
+
+footer {
+    background-color: var(--light-brown);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+.footer-nav a {
+    display: block;
+}
+
+.footer-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
