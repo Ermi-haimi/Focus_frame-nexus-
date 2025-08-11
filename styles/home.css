@@ -252,6 +252,42 @@ footer {
     flex-wrap: wrap-reverse;
 }
 
+.footer-social ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tiktok {
+    fill: black;
+    border-radius: 3px;
+}
+
+.tiktok:hover {
+    background-color: black;
+    fill: var(--light-brown)
+}
+
+.insta {
+    fill: purple;
+    border-radius: 3px;
+}
+
+.insta:hover {
+    background-color: purple;
+    fill: var(--light-brown)
+}
+
+.pint {
+    fill: red;
+    border-radius: 3px;
+}
+
+.pint:hover {
+    background-color: red;
+    fill: var(--light-brown)
+}
+
 
 @media (max-width:950px) {
     .title h2 {
