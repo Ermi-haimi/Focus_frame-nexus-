@@ -79,7 +79,8 @@ form {
 }
 
 input,
-select {
+select,
+textarea {
     background-color: var(--button-color);
     color: white;
     padding: 0.5em;
